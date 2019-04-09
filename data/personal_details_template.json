@@ -1,6 +1,6 @@
 {
-	"namn": "Förnamn Efternamn",
+	"namn": "Full name",
 	"personnummer": "YYYYMMDD-NNNN",
 	"postnummer": "NNNNN",
-	"postort": ""
+	"postort": "City"
 }

@@ -4,7 +4,8 @@ __pycache__
 .DS_Store
 *.pyc
 venv
-out
+out/*
+!out/.ignore
 data/personal_details.json
 data/trades*.csv*
 data/fees.json
