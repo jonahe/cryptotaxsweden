@@ -9,5 +9,6 @@ COPY . .
 
 RUN ls data
 RUN pwd
+RUN touch out/insider.txt
 
 CMD [ "bash" ]
