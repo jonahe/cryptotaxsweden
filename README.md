@@ -110,9 +110,9 @@ If you prefer using Docker as the only dependency, you may build an image from t
 ```
 docker build . -t cryptotaxsweden-docker
 ```
-and then create a container and run your preferred command within it (here using the command `python report.py 2017 --simplified-k4` ) and mount your local `/out` folder to the container `/out` (`-v /out:/out`) folder with
+and then create a container and run your preferred command within it (here using the command `python report.py 2017 --simplified-k4` ) and mount your local `/out` folder to the container `/out` (``-v `pwd`/out:/usr/src/app/out ``) folder with
 ```
-docker run -v /out:/out cryptotaxsweden-docker python report.py 2018 --simplified-k4
+docker run -v `pwd`/out:/usr/src/app/out cryptotaxsweden-docker python report.py 2018 --simplified-k4
 ```
 
 NOTE: running the `build` command must be done AFTER you have properly saved and (re)named your `personal_details.json` file and added any files in the `data` folder. If you do any related changes, you need to run the build command again.

@@ -7,8 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN ls data
-RUN pwd
-RUN touch out/insider.txt
-
 CMD [ "bash" ]
